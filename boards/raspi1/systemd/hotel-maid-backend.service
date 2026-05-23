@@ -1,0 +1,19 @@
+[Unit]
+Description=CCS-2PLUS Backend
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/hotel-maid-backend \
+  -listen 0.0.0.0:6010 \
+  -serial /dev/ttyAMA0 \
+  -baud 9600 \
+  -db-path /opt/hotel-dashboard/data/ccs2plus.db \
+  -export-dir /opt/hotel-dashboard/exports \
+  -export-timezone Asia/Bangkok \
+  -dashboard-dir /opt/hotel-dashboard
+Restart=always
+RestartSec=5
+User=kaina
+
+[Install]
+WantedBy=multi-user.target

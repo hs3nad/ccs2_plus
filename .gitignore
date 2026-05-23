@@ -1,0 +1,107 @@
+# ============ Binary & Compile Output ============
+*.dll
+*.exe
+*.img
+*.wav
+*.dp2
+*.ico
+*.mc3
+*.bin
+*.elf
+*.hex
+*.map
+*.apk
+*.ipa
+*.o
+*.o.d
+*.d
+*.lss
+*.lst
+*.sym
+*.a
+
+# ============ Build Folders ============
+build/
+dist/
+default/
+output/
+Listings/
+Objects/
+obj/
+**/build/
+**/dist/
+**/default/
+**/output/
+**/Listings/
+**/Objects/
+**/obj/
+**/lib/obj/
+
+# ============ Arduino IDE output ============
+*.ino_*.hex
+*.ino_*.lst
+*.ino_*.bin
+*.ino_*.elf
+*.ino.with_bootloader*.hex
+
+# ============ Arduino / PlatformIO ============
+.pio/
+.pioenvs/
+
+# ============ ESP-IDF ============
+esp-idf/
+sdkconfig.old
+
+# ============ Flutter ============
+**/.dart_tool/
+**/.pub-cache/
+**/windows/flutter/ephemeral/
+**/ios/Pods/
+**/android/.gradle/
+
+# ============ MPLAB / PIC ============
+nbproject/private/
+**/private/
+*.X/build/
+*.X/dist/
+
+# ============ Config ============
+*.ini
+*.user
+*.suo
+
+# ============ IDE ============
+.vscode/settings.json
+*.swp
+.DS_Store
+Thumbs.db
+
+# ============ Keil IDE ============
+*.uvgui
+*.uvgui.*
+*.uvopt
+*.uvgui.bak
+
+# ============ Visual Studio ============
+*.pdb
+*.application
+*.exe.manifest
+*.exe.deploy
+*.vshost.exe.manifest
+bin/Debug/
+bin/Release/
+obj/Debug/
+obj/Release/
+publish/
+
+# ============ MPLAB Log ============
+MPLABXLog.xml
+
+# ============ VS Code ทุก path ============
+**/.vscode/
+
+# ============ Media files ============
+*.pdf
+*.mp4
+*.mov
+*.avi

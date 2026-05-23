@@ -1,0 +1,31 @@
+{
+  "site": {
+    "name": "CCS2 Default Deployment",
+    "controller": "raspberry-pi-1",
+    "transport": "usb-rs485",
+    "topology": "pi1-direct-rs485"
+  },
+  "rooms": [
+    {
+      "room_id": "101",
+      "controller_id": "relay-box-a",
+      "address": 1,
+      "card_index": 1,
+      "port_index": 0
+    },
+    {
+      "room_id": "102",
+      "controller_id": "relay-box-a",
+      "address": 1,
+      "card_index": 1,
+      "port_index": 1
+    },
+    {
+      "room_id": "1205",
+      "controller_id": "ctrl-1205",
+      "address": 3,
+      "card_index": 3,
+      "port_index": 5
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# CCS-2PLUS combined dashboard + backend tunnel.
+# This maps public frps port 6010 to local port 6010, where go-backend serves
+# both Flutter dashboard static files and REST/SSE API routes.
+
+serverAddr = "34.87.151.202"
+serverPort = 7000
+
+# Must match the token configured on frps. Luckfox uses this same token auth
+# format, so keep auth.method enabled instead of relying on defaults.
+auth.method = "token"
+auth.token = "amphan2002"
+
+transport.tls.enable = true
+loginFailExit = false
+
+[[proxies]]
+name = "ccs2plus-dashboard-backend-6010"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 6010
+remotePort = 6010
+
+[[proxies]]
+name = "ccs2plus-ssh-6110"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 6110
