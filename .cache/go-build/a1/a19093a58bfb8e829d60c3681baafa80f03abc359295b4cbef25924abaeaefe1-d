@@ -1,6 +1,0 @@
-./memory.go
-./memory32.go
-./mmap_linux_32.go
-./mmap_unix.go
-./nocounters.go
-./trace_disabled.go
