@@ -105,3 +105,6 @@ MPLABXLog.xml
 *.mp4
 *.mov
 *.avi
+
+# Local build/cache
+.cache/
