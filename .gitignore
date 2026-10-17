@@ -44,9 +44,6 @@ obj/
 *.ino_*.elf
 *.ino.with_bootloader*.hex
 
-# ============ Arduino / PlatformIO ============
-.pio/
-.pioenvs/
 
 # ============ ESP-IDF ============
 esp-idf/
